@@ -17,7 +17,7 @@ winner =[]
 winner_name = []
 winner.each {|key| puts "#{key}" 
   key.each { |type, value| 
-    if type.to_s == :name
+    if type.to_s == "name"
       winner_name << value
     end
   } 
