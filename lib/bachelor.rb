@@ -22,7 +22,7 @@ winner.each {|key| puts "#{key}"
     end
   } 
 }
-winner_name
+(winner_name.split(" "))[0]
 end
 
 
