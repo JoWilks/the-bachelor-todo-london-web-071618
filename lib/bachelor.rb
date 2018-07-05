@@ -17,12 +17,12 @@ winner =[]
 winner_name = []
 winner.each {|key| puts "#{key}" 
   key.each { |type, value| 
-    if type == :name
+    if type.to_s == :name
       winner_name << value
     end
   } 
 }
-winner
+winner_name
 end
 
 
