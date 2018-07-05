@@ -1,24 +1,30 @@
 def get_first_name_of_season_winner(data, season)
-name = []
+winner =[]
 
   data.each {|s,contestants| 
     if s.to_s === season
       puts "#{s} & #{contestants}"
-        contestants.each {|cont_a| #puts "#{cont_a}!!!"
-          cont_a.each { |val_type, val| #puts "#{val_type}, #{val}"
-            if val === "Winner" 
-              name << [cont_a]
-              puts "winner found!!!!!!"
+        contestants.each {|cont_a| 
+          cont_a.each {|val_type, val| 
+            if val === "Winner"             
+              winner << cont_a
             end
-              
           }
-      }
-
+        }
     end
   }
-name[0]
 
+winner_name = []
+winner.each {|key| puts "#{key}" 
+  key.each { |type, value| 
+    if type == :name
+      winner_name << value
+    end
+  } 
+}
+(winner_name[0].split(" "))[0]
 end
+
 
 def get_contestant_name(data, occupation)
   # code here
