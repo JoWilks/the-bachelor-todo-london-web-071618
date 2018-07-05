@@ -16,7 +16,8 @@ name = []
 
     end
   }
-name
+name[0]
+
 end
 
 def get_contestant_name(data, occupation)
