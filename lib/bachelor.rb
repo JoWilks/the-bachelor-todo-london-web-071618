@@ -5,7 +5,7 @@ name = []
     if s.to_s === season
       puts "#{s} & #{contestants}"
         contestants.each {|cont_a| #puts "#{cont_a}!!!"
-          cont_a.each { |val_type, val| puts "#{val_type}, #{val}"
+          cont_a.each { |val_type, val| #puts "#{val_type}, #{val}"
             if val === "Winner" 
               name << [cont_a]
               puts "winner found!!!!!!"
